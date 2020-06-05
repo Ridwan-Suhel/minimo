@@ -195,6 +195,7 @@ header .menu ul li a:hover:after{
 }
 .newsletter form .sub-btn a{
 	position: relative;
+	width: 32px;
 }
 .newsletter form .sub-btn a:before{
 	content: '';
@@ -270,6 +271,7 @@ header .menu ul li a:hover:after{
 	}
 }
 .newsletter form .sub-btn a img{
+	width: 32px;
 }
 
  /*travel blogs start*/
