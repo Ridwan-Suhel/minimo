@@ -121,6 +121,46 @@ header .menu ul li a:hover:after{
 }
 .photodiary a.ubuntu-text{
 	text-decoration: none;
+	transition: .3s;
+	position: relative;
+}
+.photodiary a.ubuntu-text:before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 2px;
+	background: transparent;
+	top: 50%;
+	left: 100%;
+	transition: .3s;
+	transform: translateY(-50%);
+}
+.photodiary a.ubuntu-text:hover{
+	color: #333;
+}
+.photodiary a.ubuntu-text:hover:before{
+	left: 105%;
+	background: #333;
+}
+.photodiary a.ubuntu-text:after{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	top: 50%;
+	left: 100%;
+	transition: .3s;
+	transform: translateY(-50%) rotate(45deg);
+	border-right: 1px solid transparent;
+	border-top: 1px solid transparent;
+}
+.photodiary a.ubuntu-text:hover:after{
+	left: 114%;
+	border-right: 1px solid #333;
+	border-top: 1px solid #333;
 }
 /*newsletter start*/
 .newsletter{
@@ -153,6 +193,85 @@ header .menu ul li a:hover:after{
 	text-align: right;
 	width: 20%;
 }
+.newsletter form .sub-btn a{
+	position: relative;
+}
+.newsletter form .sub-btn a:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 25%;
+	right: 70%;
+	width: 0px;
+	height: 1px;
+	background: transparent;
+}
+.newsletter form .sub-btn a:hover:before{
+	background: #333;
+	animation: animate .8s linear infinite;
+}
+@keyframes animate{
+	0%{
+		right: 80%;
+		width: 10px;
+	}
+	25%{
+		right: 85%;
+		width: 15px;
+	}
+	50%{
+		right: 90%;
+		width: 25px;
+	}
+	75%{
+		right: 100%;
+		width: 30px;
+	}
+	100%{
+		right: 105%;
+		width: 35px;
+	}
+}
+.newsletter form .sub-btn a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 40%;
+	right: 78%;
+	width: 0px;
+	height: 1px;
+	background: transparent;
+}
+.newsletter form .sub-btn a:hover:after{
+	background: #333;
+	animation: animatetwo .8s .3s linear infinite;
+	width: 15px;
+}
+@keyframes animatetwo{
+	0%{
+		right: 80%;
+		width: 5px;
+	}
+	25%{
+		right: 90%;
+		width: 10px;
+	}
+	50%{
+		right: 95%;
+		width: 20px;
+	}
+	75%{
+		right: 100%;
+		width: 25px;
+	}
+	100%{
+		right: 105%;
+		width: 30px;
+	}
+}
+.newsletter form .sub-btn a img{
+}
+
  /*travel blogs start*/
  .t-blogs{
  	margin-top: 100px;
