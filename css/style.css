@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Playfair Display', serif;
+	color: #626262;
+}
+h1{
+	font-size: 30px;
+	font-weight: 400;
+}
+/*common-margin start*/
+.mt{
+	margin-top: 50px;
+}
+.mb{
+	margin-bottom: 50px;
+}
+/*common-margin end*/
+/*difference container style start*/
+.container{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container-2{
+	width: 75%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*difference container style end*/
+/*ubuntu common text start*/
+.ubuntu-text{
+	font-family: 'Ubuntu', sans-serif;
+	color: #b4ad9e;
+	text-transform: uppercase;
+	margin: 25px 0px;
+}
+/*ubuntu common text end*/
+/*content style start*/
+.content p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+/*content style end*/
+/*column style start*/
+.col-6 {
+	width: 47%;
+	float: left;
+	box-sizing: border-box;
+}
+.col-6 .single-box img{
+	width: 100%;
+	display: block;
+}
+.float-right{
+	float: right;
+}
+/*column style end*/
+/*universal end here*/
+/*header start*/
+header .container{
+	padding: 25px 0px;
+}
+header .logo{
+	width: 120px;
+	float: left;
+}
+header .menu{
+	width: 80%;
+	float: right;
+	margin-top: 3px;
+}
+header .menu ul{
+	text-align: right;
+}
+header .menu ul li{
+	list-style: none;
+	display: inline-block;
+}
+header .menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #626262;
+	margin-left: 120px;
+	transition: .3s;
+	position: relative;
+}
+header .menu ul li a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	border: 1px solid transparent;
+	transition: .3s;
+}
+header .menu ul li a:hover:after{
+	bottom: -7px;
+	border: 1px solid #333;
+}
+.burger-menu{
+	display: none;
+}
+/*hero area start*/
+.hero-bg .container img{
+	width: 100%;
+	display: block;
+}
+/*photodiary area start*/
+.photodiary{
+	padding: 70px 0px;
+}
+.photodiary a.ubuntu-text{
+	text-decoration: none;
+}
+/*newsletter start*/
+.newsletter{
+	padding: 70px 0px;
+	margin: 50px 0px;
+	background: #f0f0f0;
+}
+.newsletter h1{
+	text-align: center;
+	color: #333;
+}
+.newsletter form{
+	width: 30%;
+	margin: auto;
+	margin-top: 70px;
+	box-sizing: border-box;
+	height: 30px;
+	border-bottom: 2px solid #626262;
+}
+.newsletter form input{
+	width: 78%;
+	display: inline-block;
+	border: none;
+	background: none;
+	font-size: 16px;
+	outline: none;
+}
+.newsletter form .sub-btn{
+	display: inline-block;
+	text-align: right;
+	width: 20%;
+}
+ /*travel blogs start*/
+ .t-blogs{
+ 	margin-top: 100px;
+ 	margin-bottom: 100px;
+ }
+ .t-blogs .btn{
+ 	text-align: center;
+ 	margin-top: 100px;
+ 	text-align: center;
+ }
+ .t-blogs .btn button{
+ 	border: 1px solid #333;
+ 	padding: 20px 40px;
+ 	border-radius: 2px;
+ 	font-size: 18px;
+ 	background: none;
+ 	font-family: 'Playfair Display', serif;
+ 	cursor: pointer;
+ 	transition: .3s;
+ }
+.t-blogs .btn button:hover{
+	background: #333;
+	color: #fff;
+}
+/*footer start*/
+footer{
+	padding: 20px 0px;
+	background: #ccc;
+}
+footer .terms{
+	display: inline-block;
+	
+}
+footer .terms a{
+	text-decoration: none;
+	color: #000;
+	margin-right: 20px;
+}
+footer .terms a:hover{
+	text-decoration: underline;
+}
+footer .f-icon{
+	float: right;
+}
+footer .f-icon span{
+	margin-right:0px;
+	color: #000;
+}
+footer .f-icon a{
+	margin-left: 25px;
+	text-decoration: none;
+	color: #000;
+	transition: .3s;
+}
+footer .f-icon a:hover{
+	color: #fff;
+}
